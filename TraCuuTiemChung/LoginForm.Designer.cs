@@ -35,7 +35,6 @@ namespace TraCuuTiemChung
             this.labelPassword = new System.Windows.Forms.Label();
             this.btLogin = new System.Windows.Forms.Button();
             this.labelAppName = new System.Windows.Forms.Label();
-            this.cbSaveUser = new System.Windows.Forms.CheckBox();
             this.pictureAppLogo = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
@@ -62,6 +61,7 @@ namespace TraCuuTiemChung
             // 
             this.tbPassword.Location = new System.Drawing.Point(350, 319);
             this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PasswordChar = '*';
             this.tbPassword.Size = new System.Drawing.Size(165, 22);
             this.tbPassword.TabIndex = 3;
             // 
@@ -94,16 +94,6 @@ namespace TraCuuTiemChung
             this.labelAppName.TabIndex = 6;
             this.labelAppName.Text = "Phần mềm quản lý tiêm vacxin trong trường";
             // 
-            // cbSaveUser
-            // 
-            this.cbSaveUser.AutoSize = true;
-            this.cbSaveUser.Location = new System.Drawing.Point(350, 432);
-            this.cbSaveUser.Name = "cbSaveUser";
-            this.cbSaveUser.Size = new System.Drawing.Size(143, 21);
-            this.cbSaveUser.TabIndex = 9;
-            this.cbSaveUser.Text = "Duy trì đăng nhập";
-            this.cbSaveUser.UseVisualStyleBackColor = true;
-            // 
             // pictureAppLogo
             // 
             this.pictureAppLogo.Image = global::TraCuuTiemChung.Properties.Resources.KTPMUD_Logo;
@@ -127,7 +117,6 @@ namespace TraCuuTiemChung
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
             "Sinh viên",
-            "Giảng viên",
             "Quản lý"});
             this.checkedListBox1.Location = new System.Drawing.Point(350, 359);
             this.checkedListBox1.Name = "checkedListBox1";
@@ -141,7 +130,6 @@ namespace TraCuuTiemChung
             this.ClientSize = new System.Drawing.Size(681, 513);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cbSaveUser);
             this.Controls.Add(this.labelAppName);
             this.Controls.Add(this.pictureAppLogo);
             this.Controls.Add(this.btLogin);
@@ -166,7 +154,6 @@ namespace TraCuuTiemChung
         private System.Windows.Forms.Button btLogin;
         private System.Windows.Forms.PictureBox pictureAppLogo;
         private System.Windows.Forms.Label labelAppName;
-        private System.Windows.Forms.CheckBox cbSaveUser;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
     }
