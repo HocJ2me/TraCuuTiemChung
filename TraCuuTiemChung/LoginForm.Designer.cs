@@ -44,7 +44,7 @@ namespace TraCuuTiemChung
             // labelUser
             // 
             this.labelUser.AutoSize = true;
-            this.labelUser.Location = new System.Drawing.Point(187, 268);
+            this.labelUser.Location = new System.Drawing.Point(186, 211);
             this.labelUser.Name = "labelUser";
             this.labelUser.Size = new System.Drawing.Size(105, 17);
             this.labelUser.TabIndex = 0;
@@ -52,14 +52,14 @@ namespace TraCuuTiemChung
             // 
             // tbUser
             // 
-            this.tbUser.Location = new System.Drawing.Point(350, 268);
+            this.tbUser.Location = new System.Drawing.Point(349, 211);
             this.tbUser.Name = "tbUser";
             this.tbUser.Size = new System.Drawing.Size(165, 22);
             this.tbUser.TabIndex = 1;
             // 
             // tbPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(350, 319);
+            this.tbPassword.Location = new System.Drawing.Point(349, 247);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '*';
             this.tbPassword.Size = new System.Drawing.Size(165, 22);
@@ -68,7 +68,7 @@ namespace TraCuuTiemChung
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Location = new System.Drawing.Point(187, 319);
+            this.labelPassword.Location = new System.Drawing.Point(186, 247);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(138, 17);
             this.labelPassword.TabIndex = 2;
@@ -76,7 +76,7 @@ namespace TraCuuTiemChung
             // 
             // btLogin
             // 
-            this.btLogin.Location = new System.Drawing.Point(276, 459);
+            this.btLogin.Location = new System.Drawing.Point(280, 341);
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(155, 23);
             this.btLogin.TabIndex = 4;
@@ -106,7 +106,7 @@ namespace TraCuuTiemChung
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(187, 360);
+            this.label1.Location = new System.Drawing.Point(186, 284);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 17);
             this.label1.TabIndex = 10;
@@ -118,9 +118,9 @@ namespace TraCuuTiemChung
             this.checkedListBox1.Items.AddRange(new object[] {
             "Sinh viên",
             "Quản lý"});
-            this.checkedListBox1.Location = new System.Drawing.Point(350, 359);
+            this.checkedListBox1.Location = new System.Drawing.Point(349, 283);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(175, 72);
+            this.checkedListBox1.Size = new System.Drawing.Size(165, 55);
             this.checkedListBox1.TabIndex = 11;
             // 
             // LoginForm
@@ -138,6 +138,7 @@ namespace TraCuuTiemChung
             this.Controls.Add(this.tbUser);
             this.Controls.Add(this.labelUser);
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureAppLogo)).EndInit();
             this.ResumeLayout(false);

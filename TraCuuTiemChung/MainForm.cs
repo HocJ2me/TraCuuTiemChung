@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using QRCoder;
 
 namespace TraCuuTiemChung
 {
@@ -30,7 +31,7 @@ namespace TraCuuTiemChung
         private void button2_Click(object sender, EventArgs e)
         {
 
-            DangKiTiem frMain = new DangKiTiem();
+            DangKiTiem frMain = new DangKiTiem(userID);
             frMain.ShowDialog();
             this.Hide();
         }
@@ -142,12 +143,20 @@ namespace TraCuuTiemChung
             string data = JsonConvert.DeserializeObject(json).ToString();
             Console.WriteLine(data);
         }
+        void creatQR()
+        {
+            QRCodeGenerator qrGenerator = new QRCodeGenerator();
+            QRCodeData qrCodeData = qrGenerator.CreateQrCode("Mã ID sinh viên: " + userID, QRCodeGenerator.ECCLevel.Q);
+            QRCode qrCode = new QRCode(qrCodeData);
+            pic.Image = qrCode.GetGraphic(5);
+        }
         public MainForm(string Message) : this()
         {
             userID = Message;
         }
         private void MainForm_Load(object sender, EventArgs e)
         {
+            creatQR();
             listVaccin();
             infoSV();
             getCovidJson();

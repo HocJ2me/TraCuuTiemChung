@@ -44,9 +44,6 @@ namespace TraCuuTiemChung
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.listView1 = new System.Windows.Forms.ListView();
@@ -59,13 +56,14 @@ namespace TraCuuTiemChung
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
+            this.pic = new System.Windows.Forms.PictureBox();
             this.panelThongTinSV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             this.SuspendLayout();
             // 
             // panelThongTinSV
@@ -208,41 +206,12 @@ namespace TraCuuTiemChung
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.pic);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Location = new System.Drawing.Point(42, 225);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(375, 474);
             this.panel1.TabIndex = 2;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(49, 313);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(135, 17);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "Họ và tên: Lê Văn A";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(49, 374);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(156, 17);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "Xác nhận đã tiêm 2 mũi";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBox2.Location = new System.Drawing.Point(71, 75);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(232, 190);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
             // 
             // label11
             // 
@@ -346,6 +315,15 @@ namespace TraCuuTiemChung
             this.label15.TabIndex = 2;
             this.label15.Text = "Thông tin thêm";
             // 
+            // pic
+            // 
+            this.pic.Location = new System.Drawing.Point(19, 63);
+            this.pic.Name = "pic";
+            this.pic.Size = new System.Drawing.Size(334, 317);
+            this.pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic.TabIndex = 4;
+            this.pic.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -367,11 +345,11 @@ namespace TraCuuTiemChung
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -393,9 +371,6 @@ namespace TraCuuTiemChung
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label14;
@@ -408,5 +383,6 @@ namespace TraCuuTiemChung
         private System.Windows.Forms.ColumnHeader iduser;
         private System.Windows.Forms.ColumnHeader idvaccin;
         private System.Windows.Forms.ColumnHeader date;
+        private System.Windows.Forms.PictureBox pic;
     }
 }
